@@ -526,7 +526,7 @@ export function Beaches() {
     {
       name: "Agios Sostis",
       category: "Pure Nature",
-      description: "Considered the most beautiful beach. No sunbeds or umbrellas—just raw beauty. Kiki's Tavern sits just above it.",
+      description: "Considered the most beautiful beach. No sunbeds or umbrellas—just raw beauty and a peaceful natural setting.",
       mapsQuery: "Agios+Sostis+Mykonos"
     },
     {

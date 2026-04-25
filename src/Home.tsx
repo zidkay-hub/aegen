@@ -55,7 +55,7 @@ export default function Home() {
     };
 
     const observer = new IntersectionObserver(observerCallback, observerOptions);
-    const sections = ["restaurants", "transfers", "beaches", "bars", "rentals", "info"];
+    const sections = ["restaurants", "transfers", "beaches", "bars", "info"];
     
     sections.forEach((id) => {
       const element = document.getElementById(id);
@@ -109,7 +109,7 @@ export default function Home() {
 
       {/* Sticky Navigation */}
       <nav className="sticky top-[68px] z-40 bg-surface-container-lowest/80 backdrop-blur-lg flex overflow-x-auto gap-8 px-8 py-5 no-scrollbar whitespace-nowrap border-b border-outline-variant/10">
-        {["Restaurants", "Transfers", "Beaches", "Bars", "Rentals", "Info"].map((item) => {
+        {["Restaurants", "Transfers", "Beaches", "Bars", "Info"].map((item) => {
           const id = item.toLowerCase();
           const isActive = activeSection === id;
           return (
@@ -132,7 +132,6 @@ export default function Home() {
             { icon: Car, label: "Transfers", id: "transfers" },
             { icon: Palmtree, label: "Beaches", id: "beaches" },
             { icon: GlassWater, label: "Bars", id: "bars" },
-            { icon: Zap, label: "Rentals", id: "rentals" },
             { icon: Info, label: "Info", id: "info" }
           ].map((item) => (
             <motion.a
@@ -187,10 +186,10 @@ export default function Home() {
                 img: "https://lh3.googleusercontent.com/aida-public/AB6AXuCspht6a0wlWESDlzmg8VyytQI59yh779Xd0KWIo4yMeYZ8kyH_ZWDcSIbRIPTaS3hv_ezC8h9rogIaKwY9g5JcB2YozL91lkMflFnsD6MQU8135Vm3Y6DiUHpN6JUTk1fpw_GAq9vC6ZSCe4Xy-RE2ncYkq1VWAZGbMlcG5OaLBMZJeDIah0zlGALLNQLLf5jmkDtFNQ0whkZJzZYQdn15DoUBxLOZ7uMGSKmNnMGGAN6dUOC2sZqpYohL1OUCSyUEge5pKkzNuwI"
               },
               {
-                name: "Kiki's Taverna",
+                name: "Lalala",
                 tag: "Traditional",
-                desc: "Famous open-air grill with no electricity, serving the freshest local ingredients.",
-                img: "https://picsum.photos/seed/kikis/800/600"
+                desc: "A cozy local favorite with authentic island flavors and relaxed Mykonian atmosphere.",
+                img: "https://picsum.photos/seed/lalala/800/600"
               },
               {
                 name: "Souvlaki Story",
@@ -240,7 +239,7 @@ export default function Home() {
           </div>
 
           <div className="px-6 mt-12 flex overflow-x-auto gap-6 no-scrollbar max-w-5xl mx-auto">
-            {["Nōema", "To Maereio", "Bakalo", "Kiki's Taverna"].map((other) => (
+            {["Nōema", "To Maereio", "Bakalo", "Lalala"].map((other) => (
               <div key={other} className="min-w-[240px] p-6 bg-surface-container-lowest rounded-2xl border border-outline-variant/5">
                 <h5 className="font-serif text-lg mb-2">{other}</h5>
                 <p className="text-[11px] text-on-surface/50 mb-4">Authentic Cycladic flavors & atmosphere</p>
@@ -306,7 +305,7 @@ export default function Home() {
                 <h5 className="font-serif text-xl mb-2">Island Bus</h5>
                 <p className="text-sm text-on-surface/50 mb-6 leading-relaxed">Multiple routes to all major beaches and villages.</p>
                 <button 
-                  onClick={() => window.open("https://mykonosbuses.com/", "_blank")}
+                  onClick={() => window.open("https://mykonosbus.com/language/el/dromologia/", "_blank")}
                   className="text-[10px] font-bold uppercase tracking-[0.2em] text-primary border-b border-primary/20 pb-1 hover:border-primary transition-all inline-block"
                 >
                   Timetable
@@ -448,43 +447,6 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Rentals Section */}
-        <section className="py-24 bg-surface-container-low" id="rentals">
-          <div className="px-6 mb-16 max-w-5xl mx-auto">
-            <motion.div {...fadeIn}>
-              <h3 className="text-4xl font-serif italic mb-4">Rentals</h3>
-              <p className="font-sans text-on-surface/60 text-sm max-w-md">
-                Explore the island at your own pace with our premium rental fleet.
-              </p>
-            </motion.div>
-          </div>
-
-          <div className="px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            {[
-              { name: "Luxury SUV", price: "€150/day", icon: Car },
-              { name: "Convertible", price: "€120/day", icon: Zap },
-              { name: "ATV / Quad", price: "€60/day", icon: Navigation }
-            ].map((item) => (
-              <motion.div 
-                key={item.name}
-                className="p-8 bg-surface-container-lowest rounded-3xl flex flex-col items-center text-center shadow-sm"
-                {...fadeIn}
-              >
-                <div className="w-14 h-14 bg-primary/5 rounded-2xl flex items-center justify-center mb-6">
-                  <item.icon className="w-7 h-7 text-primary" />
-                </div>
-                <h5 className="font-serif text-xl mb-2">{item.name}</h5>
-                <p className="text-2xl font-serif text-primary mb-6">{item.price}</p>
-                <button 
-                  onClick={() => window.open(`https://wa.me/306977246788?text=I'd%20like%20to%20reserve%20a%20${item.name}`, "_blank")}
-                  className="w-full py-3 text-[10px] font-bold uppercase tracking-widest border border-outline-variant/30 rounded-xl hover:bg-primary hover:text-white transition-all"
-                >
-                  Reserve Now
-                </button>
-              </motion.div>
-            ))}
-          </div>
-        </section>
 
         {/* Essential Info */}
         <section className="py-24" id="info">

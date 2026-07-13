@@ -787,26 +787,6 @@ export function Transfers() {
           </div>
         </motion.section>
 
-        {/* Luggage Storage Section */}
-        <motion.section {...fadeIn} className="bg-surface-container-low border border-outline-variant/10 rounded-3xl p-8 flex flex-col md:flex-row items-center gap-8 shadow-sm">
-           <div className="w-16 h-16 bg-white border border-outline-variant/20 rounded-[1.5rem] flex items-center justify-center shrink-0">
-             <Briefcase className="w-8 h-8 text-primary" /> 
-           </div>
-           
-           <div className="text-center md:text-left flex-1">
-             <h3 className="text-2xl font-serif mb-2">Luggage Storage</h3>
-             <p className="font-sans text-on-surface/70 text-sm leading-relaxed mb-4">
-               We do store luggage on checkout only if there is any space left in lockers. WhatsApp us your room number and request a time to drop off your bags.
-             </p>
-             <button 
-                onClick={() => window.open("https://wa.me/306977246788", "_blank")}
-                className="inline-flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.2em] text-primary hover:text-primary-container transition-colors border-b border-primary/20 pb-1"
-              >
-                <MessageCircle className="w-4 h-4" /> Request Storage
-              </button>
-           </div>
-        </motion.section>
-
       </div>
 
       <div className="px-6 pb-16 grid grid-cols-1 gap-12 max-w-3xl mx-auto">

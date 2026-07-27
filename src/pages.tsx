@@ -817,12 +817,12 @@ export function Transfers() {
 
               <div className="flex flex-wrap gap-4 items-center">
                 <button 
-                  onClick={() => window.open("https://wa.me/306934596482", "_blank")}
+                  onClick={() => window.open("https://wa.me/00306977246788", "_blank")}
                   className="inline-flex items-center gap-2 bg-[#25D366] text-white px-6 py-3 rounded-xl text-[10px] uppercase font-bold tracking-widest hover:bg-[#20bd5a] transition-colors shadow-md shadow-[#25D366]/20"
                 >
                   <MessageCircle className="w-5 h-5" /> Contact Driver
                 </button>
-                  <p className="text-[10px] uppercase tracking-[0.1em] font-bold text-on-surface/40">+306934596482</p>
+                  <p className="text-[10px] uppercase tracking-[0.1em] font-bold text-on-surface/40">00306977246 788</p>
               </div>
             </div>
           </div>

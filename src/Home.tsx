@@ -318,10 +318,10 @@ export default function HomePage() {
                 <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
                   <div className="flex flex-col">
                     <span className="text-[10px] uppercase tracking-widest text-on-surface/40 font-bold mb-1">Direct Driver Contact</span>
-                    <span className="text-2xl font-serif">+306934596482</span>
+                    <span className="text-2xl font-serif">00306977246 788</span>
                   </div>
                   <button
-                    onClick={() => window.open("https://wa.me/306934596482", "_blank")}
+                    onClick={() => window.open("https://wa.me/00306977246788", "_blank")}
                     className="w-full sm:w-auto bg-[#25D366] text-white px-8 py-4 rounded-2xl font-bold flex items-center justify-center gap-3 hover:scale-105 transition-transform shadow-lg shadow-[#25D366]/20"
                   >
                     <MessageCircle className="w-5 h-5" /> Contact Driver
